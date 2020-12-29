@@ -51,7 +51,7 @@ public class ChatBoxActivity extends AppCompatActivity {
 
         //connect you socket client to the server
         try {
-            socket = IO.socket("YOUR SOCKET URL");
+            socket = IO.socket("YOUR SOCKETIO SERVER URL");
             socket.connect();
             socket.emit("join", Nickname,groupId);
         } catch (Exception e) {
